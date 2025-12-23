@@ -1,0 +1,15 @@
+.header {
+  @apply flex md:py-8 md:px-[10%] justify-between items-center py-8 px-4;
+}
+
+.navbar-items {
+  @apply list-none m-0 p-0 flex gap-6 text-[20px];
+}
+
+.logo {
+  @apply flex items-center justify-center gap-8 no-underline text-[#ddd6cb] font-bold tracking-[.15rem] text-2xl uppercase;
+}
+
+.logo-image {
+  @apply w-20 h-20 object-contain drop-shadow-[0_0_12px_rgba(0,0,0,0.5)];
+}
