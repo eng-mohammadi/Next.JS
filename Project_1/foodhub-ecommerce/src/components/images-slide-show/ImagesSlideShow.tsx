@@ -28,7 +28,7 @@ export default function ImagesSlideShow() {
           fill
           sizes="100vw"
           priority={index === 0}
-          className={index === currentImageIndex ? "active" : ""}
+          className={index === currentImageIndex ? "slideshow-active" : ""}
         />
       ))}
     </div>

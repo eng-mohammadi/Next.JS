@@ -2,12 +2,12 @@ import { NavbarProps } from "../data-types/types/navbar";
 
 export const navbarData: NavbarProps[] = [
   {
-    id: 2,
+    id: 1,
     href: "/meals",
     title: "Brows Meals",
   },
   {
-    id: 3,
+    id: 2,
     href: "/community",
     title: "Foods Community",
   },

@@ -2,3 +2,7 @@
 @import "./main-header/navbar-styles.css";
 @import "./main-page/main-page-styles.css";
 @import "./images-slide-show/imagesSlideShow-styles.css";
+@import "./meals/mealItem-styles.css";
+@import "./meals/mealsGrid-styles.css";
+@import "./meals/mealPage-styles.css";
+@import "./meal-loading/mealLoading-styles.css";

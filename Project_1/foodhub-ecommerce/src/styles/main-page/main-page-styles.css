@@ -1,41 +1,41 @@
-.header {
+.main-header {
   @apply w-[90%] max-w-300 flex gap-12 m-12 mx-auto;
 }
 
-.slideshow {
+.main-slideshow {
   @apply w-160 h-100;
 }
 
-.hero {
+.main-hero {
   @apply text-[#ddd6cb] text-2xl;
 }
 
-.hero h1 {
+.main-hero h1 {
   @apply text-[32px] font-bold tracking-[2.4px] uppercase bg-linear-to-r from-[#f9572a] to-[#ffc905] bg-clip-text;
 }
 
-.cta {
-  @apply text-2xl flex gap-4;
+.main-cta {
+  @apply text-2xl flex items-center gap-4;
 }
 
-.cta a {
-  @apply inline-block mt-4 py-2 px-4 rounded-xl bg-linear-to-r from-[#f9572a] to-[#ff9b05] text-white font-bold decoration-0;
+.main-cta a:nth-child(2) {
+  @apply inline-block mt-4 py-2 px-4 rounded-xl bg-linear-to-r from-[#f9572a] to-[#ff9b05] text-white font-bold no-underline;
 }
 
-.cta a:hover,
-.cta a:active {
+.main-cta a:nth-child(2):hover,
+.main-cta a:nth-child(2):active {
   @apply bg-linear-to-r from-[#fd4715] to-[#f9b241];
 }
 
-.cta a:first-child {
-  @apply bg-transparent font-normal text-[#ff9b05] pl-0;
+.main-cta a:first-child {
+  @apply bg-transparent font-normal text-black pl-0;
 }
 
-.cta a:first-child:hover,
-.cta a:first-child:active {
+.main-cta a:first-child:hover,
+.main-cta a:first-child:active {
   @apply bg-transparent text-[#f9b241];
 }
 
-.section {
+.main-section {
   @apply flex flex-col text-[#ddd6cb] text-2xl max-w-200 w-[90%] my-8 mx-auto items-center;
 }

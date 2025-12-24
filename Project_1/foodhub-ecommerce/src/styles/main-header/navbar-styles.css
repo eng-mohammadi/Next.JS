@@ -1,4 +1,4 @@
-.header {
+.navbar-header {
   @apply flex md:py-8 md:px-[10%] justify-between items-center py-8 px-4;
 }
 
@@ -12,4 +12,17 @@
 
 .logo-image {
   @apply w-20 h-20 object-contain drop-shadow-[0_0_12px_rgba(0,0,0,0.5)];
+}
+
+.navbar-link {
+  @apply no-underline text-[#ddd6cb] font-bold py-2 px-4 rounded-3xl;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  @apply bg-linear-to-r from-[#ff8a05] to-[#f9b331] bg-clip-text text-shadow-[0_0_18px_rgba(248,190,42,0.8)] text-transparent;
+}
+
+.navbar-active {
+  @apply bg-linear-to-r from-[#ff8a05] to-[#f9b331] bg-clip-text;
 }

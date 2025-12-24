@@ -1,0 +1,49 @@
+.meal {
+  @apply flex flex-col justify-between h-full rounded-sm overflow-hidden transition-all duration-300 ease-in-out text-[#ddd6cb] bg-linear-to-b from-[#2c1e19] to-[#25200f] shadow-rgba_0.3;
+}
+
+.meal-headerText {
+  @apply pt-2 pb-0 px-4;
+}
+
+.meal-headerText h2 {
+  @apply m-0 text-2xl;
+}
+
+.meal-headerText p {
+  @apply text-xs text-[#cfa69b] italic;
+}
+
+.meal h2,
+.meal p {
+  @apply m-0;
+}
+
+.meal-image {
+  @apply relative h-60;
+}
+
+.meal img {
+  @apply object-cover;
+}
+
+.meal-content {
+  @apply flex flex-col justify-between h-full;
+}
+
+.meal-summary {
+  @apply pt-4 pb-0 px-4;
+}
+
+.meal-actions {
+  @apply p-4 text-right;
+}
+
+.meal-actions a {
+  @apply inline-block mt-4 py-2 px-4 rounded-lg bg-linear-to-b from-[#f9572a] to-[#ff9b05] text-white font-bold no-underline;
+}
+
+.meal-actions a:hover,
+.meal-actions a:active {
+  @apply bg-linear-to-b from-[#fd4715] to-[#f9b241] shadow-rgba_0.8;
+}

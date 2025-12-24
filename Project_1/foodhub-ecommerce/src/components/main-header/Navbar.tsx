@@ -3,14 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 import logoImage from "@/public/images/logo/logo.png";
-import { navbarData } from "@/src/data/navbar.data";
 import MainHeaderBackground from "./MainHeaderBackground";
+import NavLink from "./NavLink";
 
 export default function Navbar() {
   return (
     <React.Fragment>
       <MainHeaderBackground />
-      <header className="header">
+      <header className="navbar-header">
         <Link className="logo" href="/">
           <Image
             src={logoImage}
@@ -21,13 +21,7 @@ export default function Navbar() {
           NextLevel Food
         </Link>
         <nav>
-          <ul className="navbar-items">
-            {navbarData.map((item) => (
-              <li key={item.id}>
-                <Link href={item.href}>{item.title}</Link>
-              </li>
-            ))}
-          </ul>
+          <NavLink />
         </nav>
       </header>
     </React.Fragment>
