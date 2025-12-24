@@ -6,5 +6,7 @@
 @import "./components/meals/mealsGrid-styles.css";
 @import "./components/meals/mealPage-styles.css";
 @import "./components/meal-loading/mealLoading-styles.css";
+@import "./components/meals/imagePicker-styles.css";
 @import "./pages/error/error-styles.css";
 @import "./pages/meal-slug/mealSlug-style.css";
+@import "./pages/share/share-styles.css";

@@ -1,0 +1,60 @@
+.share-header {
+  @apply gap-12 mx-auto mt-12 mb-20 w-9/10 max-w-300 text-[#ddd6cb] text-2xl;
+}
+
+.share-header h1 {
+  @apply font-[Montserrat];
+}
+
+.share-highlight {
+  @apply bg-linear-to-br from-[#f9572a] to-[#ff8a05] bg-clip-text text-transparent;
+}
+
+.share-main {
+  @apply w-9/10 max-w-300 mx-auto my-12 text-white;
+}
+
+.share-form {
+  @apply max-w-200;
+}
+
+.share-form label {
+  @apply block mb-2 text-base font-[Montserrat] uppercase text-[#b3aea5] font-bold;
+}
+
+.share-form input,
+.share-form textarea {
+  @apply block w-full py-2 px-4 rounded border border-[#454952] bg-[#1c2027] text-xl font-[Montserrat] text-[#ddd6cb];
+}
+
+.share-form input:focus,
+.share-form textarea:focus {
+  @apply outline-[#f99f2a] bg-[#1f252d];
+}
+
+.share-row {
+  @apply flex gap-4;
+}
+
+.share-row p {
+  @apply w-full;
+}
+
+.share-actions {
+  @apply text-right mt-7;
+}
+
+.share-actions button {
+  @apply border-0 border-none py-3 px-8 bg-linear-to-br from-[#f9572a] to-[#ff9b05] text-white rounded-sm cursor-pointer text-xl shadow-[0_0.125rem_0.3125rem_rgba(0,0,0,0.3)];
+}
+
+.share-actions button:hover,
+.share-actions button:focus {
+  @apply bg-linear-to-br from-[#fd4715] to-[#f9b241];
+}
+
+.share-actions button:disabled,
+.share-actions button:hover:disabled,
+.share-actions button:focus:disabled {
+  @apply bg-[#ccc] text-[#979797] cursor-not-allowed;
+}
