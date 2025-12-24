@@ -1,0 +1,3 @@
+.meal-loading_page {
+  @apply text-center animate-loading mt-8 text-2xl;
+}

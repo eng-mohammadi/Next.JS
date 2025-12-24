@@ -9,8 +9,19 @@ body {
 @theme {
   --shadow-rgba_0.3: 0 0 12px rgba(0, 0, 0, 0.3);
   --shadow-rgba_0.8: 0 0 12px rgba(242, 100, 18, 0.8);
+  --shadow-rgba_0.5: 0 0 8px rgba(0, 0, 0, 0.5);
+
+  --text-shadow-rgba_0.5: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  --text-shadow-rgba_0.8: 0 0 18px rgba(248, 190, 42, 0.8);
 
   --animate-loading: loading 1.2s ease-in-out infinite;
+  --animate-fade-slide-in-from-left: fade-slide-in-from-left 1s ease-out
+    forwards;
+  --animate-fade-slide-in-from-right: fade-slide-in-from-right 1s ease-out
+    forwards;
+  --animate-fade-slide-in-from-bottom: fade-slide-in-from-bottom 1s ease-out
+    forwards;
+  --animate-flash: flash 1s ease-in-out infinite alternate;
 
   @keyframes loading {
     0% {
@@ -24,6 +35,51 @@ body {
     100% {
       transform: translateY(0);
       opacity: 1;
+    }
+  }
+
+  @keyframes fade-slide-in-from-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-1rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-slide-in-from-right {
+    0% {
+      opacity: 0;
+      transform: translateX(1rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-slide-in-from-bottom {
+    0% {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes flash {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 }
