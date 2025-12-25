@@ -5,6 +5,20 @@ import { notFound } from "next/navigation";
 
 import { getMeal } from "@/lib/meals";
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ mealSlug: string }>;
+}) {
+  const resolvedParams = await params;
+  const meal = await getMeal(resolvedParams.mealSlug);
+
+  return {
+    title: meal.title,
+    description: meal.summary,
+  };
+}
+
 export default async function page({
   params,
 }: {

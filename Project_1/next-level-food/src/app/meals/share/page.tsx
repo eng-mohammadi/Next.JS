@@ -1,6 +1,19 @@
-import ImagePicker from "@/src/components/meals/ImagePicker";
+"use client";
 
-export default function ShareMealPage() {
+import { useActionState } from "react";
+
+import { shareMeal } from "@/lib/action";
+import ImagePicker from "@/src/components/meals/ImagePicker";
+import MealsFormSubmit from "@/src/components/meals-form-submit/MealsFormSubmit";
+import { IFormState } from "@/src/data-types/interfaces/formState";
+
+export default function ShareMealPage(): React.ReactNode {
+  const [state, formAction] = useActionState<IFormState, FormData>(
+    async (_prevState: IFormState, formData: FormData): Promise<IFormState> =>
+      shareMeal(formData),
+    { message: null } as IFormState
+  );
+
   return (
     <>
       <header className="share-header">
@@ -10,7 +23,7 @@ export default function ShareMealPage() {
         <p>Or any other meal you feel needs sharing!</p>
       </header>
       <main className="share-main">
-        <form className="share-form">
+        <form className="share-form" action={formAction}>
           <div className="share-row">
             <p>
               <label htmlFor="name">Your name</label>
@@ -38,9 +51,10 @@ export default function ShareMealPage() {
               required
             ></textarea>
           </p>
-          <ImagePicker />
+          <ImagePicker label={"Your image"} name="image" />
+          {state.message && <p>{state.message}</p>}
           <p className="share-actions">
-            <button type="button">Share Meal</button>
+            <MealsFormSubmit />
           </p>
         </form>
       </main>

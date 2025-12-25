@@ -3,7 +3,11 @@
 }
 
 .share-header h1 {
-  @apply font-[Montserrat];
+  @apply text-5xl;
+}
+
+.share-header p {
+  @apply mt-2.5;
 }
 
 .share-highlight {
