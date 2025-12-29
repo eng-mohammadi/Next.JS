@@ -1,5 +1,16 @@
-import { Button } from "@/components/ui/button";
+import React from "react";
 
-export default function Home() {
-  return <Button></Button>;
+import { sampleData } from "@/db/sampleData";
+import ProductList from "@/components/shared/product/ProductList";
+
+export default function RootHomePage() {
+  return (
+    <React.Fragment>
+      <ProductList
+        data={sampleData.products}
+        title="Newest Arrivals"
+        limit={4}
+      />
+    </React.Fragment>
+  );
 }
