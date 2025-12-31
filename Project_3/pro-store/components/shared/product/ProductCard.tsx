@@ -3,8 +3,9 @@ import Image from "next/image";
 
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import ProductPrice from "./ProductPrice";
+import { IProductProps } from "@/dataTypes/interfaces/product";
 
-export default function ProductCard({ product }: { product: any }) {
+export default function ProductCard({ product }: { product: IProductProps }) {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader className="p-0 items-center">
