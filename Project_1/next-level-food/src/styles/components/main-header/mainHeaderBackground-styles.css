@@ -1,7 +1,0 @@
-.background-header {
-  @apply absolute w-full h-80 left-0 top-0 z-[-1];
-}
-
-.background-header svg {
-  @apply w-full h-auto block;
-}

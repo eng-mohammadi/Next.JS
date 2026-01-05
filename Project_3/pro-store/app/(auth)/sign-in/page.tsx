@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { APP_NAME } from "@/lib/constants";
+import CredentialSignInForm from "./CredentialSignInForm";
 
 export const metadata: Metadata = {
   title: "Sign In",
@@ -33,7 +34,9 @@ export default function signInPage() {
             sign in to your account
           </CardDescription>
         </CardHeader>
-        <CardContent className="space-y-4">{/* Form here */}</CardContent>
+        <CardContent className="space-y-4">
+          <CredentialSignInForm />
+        </CardContent>
       </Card>
     </div>
   );
